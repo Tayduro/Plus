@@ -24,9 +24,9 @@ function error(event) {
 }
 
 function calculator() {
-  const n1 = Number(document.getElementById('firstInput').value);
-  const n2 = Number(document.getElementById('secondInput').value);
-  const result = Decimal.sum(n1, n2);
+  const firstNumber = Number(document.getElementById('firstInput').value);
+  const secondNumber = Number(document.getElementById('secondInput').value);
+  const result = Decimal.sum(firstNumber, secondNumber);
   if (result) {
     if (document.getElementById('result') !== null) {
       document.getElementById('result').remove();
